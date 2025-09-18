@@ -3,7 +3,7 @@ const API_BASE_URL = isLocal
     ? 'http://localhost:8080'
     : 'https://productos-crud-app-production.up.railway.app/Producto'; // Se actualizará después
 
-const API_URL = `${API_BASE_URL}/Producto`;
+const API_URL = `${API_BASE_URL}/productos`;
 
 
 
