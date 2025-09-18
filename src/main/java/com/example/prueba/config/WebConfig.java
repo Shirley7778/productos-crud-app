@@ -14,10 +14,10 @@ public class WebConfig {
             @Override
             public void addCorsMappings(@NonNull CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("*")
+                        .allowedOrigins("http://127.0.0.1:5500", "http://localhost:5500", "https://euphonious-fox-ce60a3.netlify.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(false); // Importante: false cuando usas *
+                        .allowCredentials(true);
             }
         };
     }

@@ -1,9 +1,9 @@
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 const API_BASE_URL = isLocal 
     ? 'http://localhost:8080'
-    : 'https://productos-crud-app-production.up.railway.app/Producto'; // Se actualizará después
+    : 'https://productos-crud-app-production.up.railway.app';
 
-const API_URL = `${API_BASE_URL}/productos`;
+const API_URL = `${API_BASE_URL}/Producto`;
 
 
 
